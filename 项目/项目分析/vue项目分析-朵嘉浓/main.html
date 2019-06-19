@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+    <title>敏感肌肤就用朵嘉浓|朵嘉浓官方网站</title>
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+    <meta name="keywords" content="朵嘉浓,朵嘉浓官方网站,朵嘉浓面膜,朵嘉浓修复乳,修复激素脸" />
+
+    <meta name="description" content="朵嘉浓官方网站，敏感肌肤就用朵嘉浓，专注于敏感肌肤修复和护理，让女性皮肤更加健康。" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="apple-mobile-web-app-title" content="">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/swiper.min.css" />
+
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css" />
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!--header-->
+
+    <header class="header menu" id="layout_header">
+
+        <a class="list" href="#menu">
+
+        </a>
+
+
+        <span class="title">
+<a href="/">
+
+</a>
+				</span>
+
+        <a class="search shangqiao" href="javascript:void(0);">
+
+        </a>
+
+        <nav id="menu" v-cloak>
+
+            <ul>
+
+                <li v-for="(items,index) in infoData" class="icn1">
+
+                    <a href="javascript:void(0);">{{items.name}}</a>
+
+                    <ul>
+
+                        <li v-for="(item,index) in items.zilei"  v-on:click="makeDetail(item.id)">
+
+                            <a href="javascript:void(0);">{{item.name}}</a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+
+                    <a href="javascript:void(0);">
+
+                        {{expertData.title}}
+
+                    </a>
+
+                    <ul>
+                        <li v-for="(item,index) in expertData.cat" v-on:click="makeExpert(item.id)">
+
+                            <a>
+
+                                {{item.name}}
+
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li>
+
+                    <a href="javascript:void(0);">
+
+                        关于朵嘉浓
+
+                    </a>
+
+                    <ul>
+
+                        <li v-for="(item,index) in aboutData">
+
+                            <a v-if="index==4" :href="item.articlehtml">
+
+                                {{item.title}}
+
+                            </a>
+
+                            <a v-else :href="item.articlehtml+expertUrl">
+
+                                {{item.title}}
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+
+                </li>
+
+                <li class="icn7">
+
+                    <a href="tel:400-012-6111">联系我们</a>
+
+                </li>
+
+                <li class="icn8">
+
+                    <a href="#">返回</a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!--body-->
+
+    <div class="layout_body">
+
+        <div class="swiper-container" onclick="javascript:window.location.href='http://shop.m.jd.com/?shopId=657061'">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                    <img src="img/banner1.jpg" />
+
+                </div>
+
+
+                <div class="swiper-slide">
+
+                    <img src="img/banner2.jpg" />
+
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <div class="list">
+
+            <!--头部列表-->
+
+            <div class="top-list fn-clear">
+
+                <div>
+
+                    <div class="content">
+
+                        <h2>朵嘉浓</h2>
+
+                        <p>品牌理念</p>
+
+                    </div>
+
+                    <a href="page1.html"><img src="img/push1.png" /></a>
+
+                </div>
+
+                <div>
+
+                    <div class="content">
+
+                        <h2>朵嘉浓</h2>
+
+                        <p>明星产品</p>
+
+                    </div>
+
+                    <a href="star.html"><img src="img/push2.png" /></a>
+
+                </div>
+
+                <div>
+
+                    <div class="content">
+
+                        <h2>朵嘉浓</h2>
+
+                        <p>专家建议</p>
+
+                    </div>
+
+                    <a href="expert.html?id=43"><img src="img/push3.png" /></a>
+
+                </div>
+
+                <div>
+
+                    <div class="content">
+
+                        <h2>朵嘉浓</h2>
+
+                        <p>关注我们</p>
+
+                    </div>
+
+                    <img src="img/push4.png" />
+
+                </div>
+
+            </div>
+
+            <!--中部列表-->
+
+            <div class="bottom-list">
+
+                <img src="img/push5.jpg" />
+
+                <!--<img src="img/push6.png" />-->
+
+                <img src="img/push7.jpg" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer-->
+
+    <footer class="footer">
+
+        <div class="f-top">
+
+            <img src="img/f_top.png" />
+
+        </div>
+
+        <p class="copyright">Powered by 上海初美生物科技有限公司</p>
+
+        <div class="f-bottom">
+
+            <a href="https://m.weibo.cn/u/6146079096?refer_flag=1001030102_&refer_flag=1001030102_&jumpfrom=weibocom"><img src="img/WB.png"/></a>
+
+            <a class="wx">
+
+                <img src="img/WX.png"/>
+
+                <div class="code">
+
+                    <img src="img/code.png" />
+
+                </div>
+
+            </a>
+
+            <a href="https://so.m.jd.com/ware/search.action?keyword=%E6%9C%B5%E5%98%89%E6%B5%93"><img src="img/JD.png" /></a>
+
+        </div>
+
+    </footer>
+
+</div>
+
+<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="js/vue.min.js" ></script>
+
+<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="js/jquery.mmenu.min.all.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6d1ab322bd4bb6f7bc669122c6671dc0";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+<script type="application/javascript">
+
+  $(document).ready(function() {
+
+    var swiper = new Swiper('.swiper-container', {
+
+      pagination: '.swiper-pagination',
+
+      paginationClickable: true,
+
+      autoplay: 2500,
+
+      loop: true,
+
+      loopedSlides: 8,
+
+      autoplayDisableOnInteraction: false
+
+    });
+
+  })
+
+</script>
+
+</body>
+
+
+
+</html>
